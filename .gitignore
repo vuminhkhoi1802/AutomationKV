@@ -1,0 +1,20 @@
+### IntelliJ ###
+.idea/
+
+### Logs ###
+test-report/
+
+### Node ###
+node_modules/
+
+### MACOS ###
+.DS_Store
+
+### Zalenium ###
+videos/
+
+### Chromium Strace ###
+chromium.strace
+
+### ESLint ###
+.eslintrc.js

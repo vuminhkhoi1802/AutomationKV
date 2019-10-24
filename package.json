@@ -1,0 +1,52 @@
+{
+    "name": "kv-shipping-automation",
+    "version": "0.0.1",
+    "description": "Đây là bộ kịch bản chạy auto-test luồng cơ bản của KV Shipping",
+    "repository": "git@gitlab.com:citigo47/shipipng-cs-auto-test.git",
+    "license": "ISC",
+    "author": "Khoi Vu",
+    "main": "index.js",
+    "scripts": {
+        "code:check": "yarn code:lint && yarn code:prettier",
+        "code:format": "yarn code:lint --fix --quiet && yarn code:prettier --write",
+        "code:lint": "eslint .",
+        "code:prettier": "prettier --check \"**/*.js*\"",
+        "report:allure": "./node_modules/allure-commandline/bin/allure",
+        "report:generate": "yarn report:allure generate --clean ./test-report/allure-result/ -o ./test-report/allure-report",
+        "report:open": "yarn report:allure open test-report/allure-report",
+        "tests:e2e": "wdio wdio.conf.js"
+    },
+    "dependencies": {
+        "@babel/cli": "^7.5.0",
+        "@babel/core": "^7.5.0",
+        "@babel/polyfill": "^7.4.4",
+        "@babel/preset-env": "^7.5.0",
+        "@babel/register": "^7.4.4",
+        "@types/cucumber": "^4.0.5",
+        "@types/node": "^12.0.12",
+        "@wdio/allure-reporter": "^5.12.1",
+        "@wdio/cli": "^5.11.0",
+        "@wdio/cucumber-framework": "^5.11.0",
+        "@wdio/dot-reporter": "^5.11.0",
+        "@wdio/local-runner": "^5.11.0",
+        "@wdio/selenium-standalone-service": "^5.11.2",
+        "@wdio/spec-reporter": "^5.11.0",
+        "@wdio/sync": "^5.11.0",
+        "allure-commandline": "^2.9.0",
+        "chai": "^4.2.0",
+        "cucumber": "^5.1.0",
+        "eslint": "^6.4.0",
+        "eslint-config-airbnb": "^17.1.1",
+        "eslint-config-airbnb-base": "^13.2.0",
+        "eslint-config-prettier": "^6.0.0",
+        "eslint-plugin-import": "^2.18.0",
+        "fibers": "^4.0.1",
+        "husky": "^3.0.1",
+        "prettier": "^1.18.2",
+        "wdio-timeline-reporter": "^5.0.10",
+        "webdriverio": "^5.11.0"
+    },
+    "devDependencies": {
+        "@babel/plugin-proposal-class-properties": "^7.5.5"
+    }
+}

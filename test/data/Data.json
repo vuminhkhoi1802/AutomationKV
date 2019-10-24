@@ -1,0 +1,70 @@
+{
+    "note": "KV Test Order",
+    "user": {
+        "preLive": {
+            "name": "admin",
+            "login": "admin",
+            "password": "123456",
+            "product": "bút chì"
+        },
+        "production": {
+            "name": "shiptest",
+            "login": "shiptest",
+            "password": "shiptest12$3",
+            "product": "Thuốc lá 555"
+        },
+        "staging9k2": {
+            "name": "admin",
+            "login": "admin",
+            "password": "1",
+            "product": "Thuốc lá 555"
+        },
+        "staging": {
+            "name": "admin",
+            "login": "admin",
+            "password": "123"
+        }
+    },
+    "shipping": {
+        "preLive": {
+            "name": "hin",
+            "login": "admin@occ.com",
+            "password": "123456",
+            "shop": "testgiaovan"
+        },
+        "production": {
+            "name": "Khôi - OCC",
+            "login": "khoi.vm@citigo.com.vn",
+            "password": "123456",
+            "shop": "testzone17"
+        }
+    },
+    "customer": {
+        "name": "khoi"
+    },
+    "delivery": {
+        "service": "Viettel"
+    },
+    "emailNotification": {
+        "dateFrom": "10/09/2019",
+        "dateTo": "11/09/2019",
+        "file": "MailNotificationLive.xlsx"
+    },
+    "ccDetailTitle": "Chi tiết đối soát COD",
+    "crosscheck": {
+        "codGHN": {
+            "type": "COD",
+            "client": "Giao hàng nhanh",
+            "dateFrom": "01/04/2019",
+            "dateTo": "02/04/2019",
+            "file": "DoisoatCODGHN05.04 (01.04 -02.04).xlsx"
+        },
+        "codVTP": {
+            "type": "COD",
+            "client": "Viettel Post",
+            "dateFrom": "01/04/2019",
+            "dateTo": "02/04/2019",
+            "file": "DoisoatCODVTP05.04 (01.04 -02.04).xlsx"
+        }
+    }
+}
